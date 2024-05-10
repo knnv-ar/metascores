@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  <style>
+    :root {
+      --color-fondo: #aaa;
+    }
+    
+    body {
+      background-color: var(--color-fondo);
+    }
+    .container {
+      background-color: var(--color-fondo);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container > div {
+      background-color: var(--color-fondo);
+      width: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <object
+      id="flash-content"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0">
+  
+        <embed src="./mutacion-v3.2.swf" pluginspage="http://www.macromedia.com/shockwave/download/"
+          type="application/x-shockwave-flash" width="100%" >
+        </embed>
+      </object>
+    </div>
+  </div>
+</body>
+
+</html>
